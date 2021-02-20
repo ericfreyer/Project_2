@@ -10,4 +10,8 @@ cache:
 services:
   - mysql
 before_install:
+<<<<<<< HEAD
   - mysql -e 'CREATE DATABASE IF NOT EXISTS user_db;'
+=======
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS user_db;'
+>>>>>>> main
