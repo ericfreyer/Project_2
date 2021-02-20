@@ -10,6 +10,4 @@ cache:
 services:
   - mysql
 before_install:
-  - mysql -e 'CREATE DATABASE IF NOT EXISTS testdb;'
-script:
-  - echo "skipping tests"
+  - mysql -e 'CREATE DATABASE IF NOT EXISTS user_db;'
