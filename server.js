@@ -31,11 +31,9 @@ app.use(passport.session());
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
-//Run when client connects
-io.on("connection", socket => {
-  console.log("New websocket connection", socket.id);
-  socket.emit("message", "Welcome to AudioBridge chat server!");
-});
+//Run socket
+const socket = require("./socket");
+socket.start(io);
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync().then(() => {
   server.listen(PORT, () => {
