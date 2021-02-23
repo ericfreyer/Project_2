@@ -32,7 +32,7 @@ require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
 //Run socket
-const socket = require("./socket");
+const socket = require("./socket/socket");
 socket.start(io);
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync().then(() => {
