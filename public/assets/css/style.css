@@ -6,7 +6,7 @@
   body {
       background-color: #000000 !important;
       font-family: 'Montserrat', sans-serif !important;
-      background-image: url('SoundBridgelogo.png');
+      background-image: url('../assets/img/audiobridgelogo.png');
       background-repeat:no-repeat;
       background-attachment:fixed;
       background-position:center;
