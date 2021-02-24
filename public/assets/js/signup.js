@@ -14,7 +14,7 @@ $(document).ready(() => {
       password: passwordInput.val().trim()
     };
 
-    if (!userData.email || !userData.username || !userData.password) {
+    if (!userData.email || !userData.password) {
       return;
     }
     // If we have an email and password, run the signUpUser function
@@ -34,7 +34,6 @@ $(document).ready(() => {
     })
       .then(() => {
         window.location.replace("/members");
-        console.log(err);
         // If there's an error, handle it by throwing up a bootstrap alert
       })
       .catch(handleLoginErr);
@@ -43,5 +42,6 @@ $(document).ready(() => {
   function handleLoginErr(err) {
     $("#alert .msg").text(err.responseJSON);
     $("#alert").fadeIn(500);
+    console.log(err)
   }
 });
