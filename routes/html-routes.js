@@ -28,6 +28,7 @@ module.exports = function(app) {
   });
 
   app.get("/chat", (req, res) => {
+    console.log(req.user);
     res.render("chat");
   });
 };
