@@ -7,7 +7,7 @@ const isAuthenticated = require("../config/middleware/isAuthenticated");
 module.exports = function(app) {
   app.get("/", (req, res) => {
     // If the user already has an account send them to the members page
-    if (req.user) {
+    if (req.User) {
       res.redirect("/members");
     }
     res.render("signup"); //change path to signup handlebar page
@@ -15,7 +15,7 @@ module.exports = function(app) {
 
   app.get("/login", (req, res) => {
     // If the user already has an account send them to the members page
-    if (req.user) {
+    if (req.User) {
       res.redirect("/members");
     }
     res.render("login");
@@ -28,7 +28,7 @@ module.exports = function(app) {
   });
 
   app.get("/chat", (req, res) => {
-    console.log(req.user);
+    console.log(req.User);
     res.render("chat");
   });
 };

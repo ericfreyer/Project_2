@@ -21,7 +21,7 @@ $(document).ready(() => {
     signUpUser(userData.email, userData.password, userData.username);
     emailInput.val("");
     passwordInput.val("");
-    usernameInput.val("")
+    usernameInput.val("");
   });
 
   // Does a post to the signup route. If successful, we are redirected to the members page
@@ -34,6 +34,7 @@ $(document).ready(() => {
     })
       .then(() => {
         window.location.replace("/members");
+        console.log(err);
         // If there's an error, handle it by throwing up a bootstrap alert
       })
       .catch(handleLoginErr);
