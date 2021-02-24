@@ -1,4 +1,28 @@
-form.signup,
-form.login {
-  margin-top: 50px;
-}
+* {
+  margin: 0;
+  padding: 0;
+  }
+
+  body {
+      background-color: #000000 !important;
+      font-family: 'Montserrat', sans-serif !important;
+      background-image: url('../assets/img/audiobridgelogo.png');
+      background-repeat:no-repeat;
+      background-attachment:fixed;
+      background-position:center;
+      background-size: 45%;
+  
+  }
+
+    h1 {
+        color: #ffff00;
+        margin-left: 10px;
+        font-weight: bolder !important;
+    }
+
+    input {
+      display: inline-block;
+      width: 80%;
+      outline: none;
+      margin:0 !important;
+    }

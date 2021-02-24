@@ -4,14 +4,14 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [1],
-      },
+        len: [1]
+      }
     },
     body: {
       type: DataTypes.TEXT,
       allowNull: false,
-      len: [1],
-    },
+      len: [1]
+    }
   });
 
   Post.associate = (models) => {
