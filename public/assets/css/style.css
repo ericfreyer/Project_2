@@ -26,3 +26,10 @@
       outline: none;
       margin:0 !important;
     }
+
+#logo{
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
