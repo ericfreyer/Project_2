@@ -31,4 +31,8 @@ module.exports = function(app) {
     console.log(req.user);
     res.render("chat");
   });
+
+  app.get("/userlogout", (req,res) =>{
+    res.render("logout");
+  });
 };
