@@ -25,11 +25,14 @@ module.exports = {
       // Appear to everyone but client connecting
       socket.broadcast.emit(
         "message",
-        formatMessage(botName, "A user has joined a chat")
+        formatMessage(botName, `${usersName} has joined a chat`)
       );
       //Appear to all clients
       socket.on("disconnect", () => {
-        io.emit("message", formatMessage(botName, "A user has left the chat"));
+        io.emit(
+          "message",
+          formatMessage(botName, `${usersName} has left the chat`)
+        );
       });
 
       //Live Chat being sent between users
