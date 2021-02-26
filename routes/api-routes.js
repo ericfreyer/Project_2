@@ -10,7 +10,8 @@ module.exports = function(app) {
     // Sending back a password, even a hashed password, isn't a good idea
     res.json({
       email: req.user.email,
-      id: req.user.id
+      id: req.user.id,
+      username: req.user.username
     });
   });
 
@@ -20,6 +21,7 @@ module.exports = function(app) {
   app.post("/api/signup", (req, res) => {
     db.User.create({
       email: req.body.email,
+      username: req.body.username,
       password: req.body.password
     })
       .then(() => {
@@ -33,7 +35,7 @@ module.exports = function(app) {
   // Route for logging user out
   app.get("/logout", (req, res) => {
     req.logout();
-    res.redirect("/");
+    res.redirect("/userlogout");
   });
 
   // Route for getting some data about our user to be used client side
@@ -46,7 +48,8 @@ module.exports = function(app) {
       // Sending back a password, even a hashed password, isn't a good idea
       res.json({
         email: req.user.email,
-        id: req.user.id
+        id: req.user.id,
+        username: req.user.username
       });
     }
   });

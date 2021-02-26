@@ -30,6 +30,7 @@ app.use(passport.session());
 // Requiring our routes
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
+// require("./routes/chat-api-routes")(app);
 
 //Run socket
 const socket = require("./socket/socket");

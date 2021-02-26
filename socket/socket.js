@@ -8,6 +8,17 @@ module.exports = {
         "message",
         formatMessage(botName, "Welcome to AudioBridge chat server!")
       );
+      socket.emit(
+        "message",
+        formatMessage(botName, "This chat server is still in Alpha Build")
+      );
+      socket.emit(
+        "message",
+        formatMessage(
+          botName,
+          "If you have any concerns, please make an issue request on the github."
+        )
+      );
       // Appear to everyone but client connecting
       socket.broadcast.emit(
         "message",
@@ -19,8 +30,8 @@ module.exports = {
       });
 
       //Live Chat being sent between users
-      socket.on("chatMessage", msg => {
-        io.emit("message", formatMessage("User", msg));
+      socket.on("chatMessage", textmsg => {
+        io.emit("message", formatMessage("User", textmsg));
       });
     });
   }

@@ -1,4 +1,5 @@
 // Requiring bcrypt for password hashing. Using the bcryptjs version as the regular bcrypt module sometimes causes errors on Windows machines
+//add username
 const bcrypt = require("bcryptjs");
 // Creating our User model
 module.exports = function(sequelize, DataTypes) {
@@ -7,10 +8,13 @@ module.exports = function(sequelize, DataTypes) {
     email: {
       type: DataTypes.STRING,
       allowNull: false,
-      unique: true,
       validate: {
         isEmail: true
       }
+    },
+    username: {
+      type: DataTypes.STRING,
+      allowNull: false
     },
     // The password cannot be null
     password: {
@@ -24,9 +28,9 @@ module.exports = function(sequelize, DataTypes) {
   };
   // Hooks are automatic methods that run during various phases of the User Model lifecycle
   // In this case, before a User is created, we will automatically hash their password
-  User.addHook("beforeCreate", user => {
-    user.password = bcrypt.hashSync(
-      user.password,
+  User.addHook("beforeCreate", User => {
+    User.password = bcrypt.hashSync(
+      User.password,
       bcrypt.genSaltSync(10),
       null
     );
