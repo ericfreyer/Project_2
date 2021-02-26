@@ -32,7 +32,7 @@ module.exports = function(app) {
     res.render("chat");
   });
 
-  app.get("/userlogout", (req,res) =>{
+  app.get("/userlogout", (req, res) => {
     res.render("logout");
   });
 };
