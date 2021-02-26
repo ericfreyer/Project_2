@@ -26,7 +26,6 @@ chatForm.addEventListener("submit", e => {
 //REFORMAT THIS TO FIT NEW HANDLEBARS
 function outputMessage(message) {
   const div = document.createElement("div");
-  // div.classList.add("received_msg");
   div.innerHTML = `  <div class="incoming_msg">
   <div class="incoming_msg_img"> <img src="https://ptetutorials.com/images/user-profile.png" alt="sunil">
   </div>
@@ -41,15 +40,3 @@ function outputMessage(message) {
  `;
   document.querySelector(".chat-messages").appendChild(div);
 }
-// const userNames = () => {
-//   console.log("getting User's name");
-//   fetch("/api/chat/1", {
-//     method: "GET",
-//     headers: {
-//       "Content-Type": "application/json"
-//     }
-//   }).then(response => console.log(response));
-// };
-// userNames();
-
-// console.log(req.user);
