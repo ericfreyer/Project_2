@@ -5,22 +5,6 @@
     </div>
 
     <div class="col-md-3"></div>
-
-
-    <div class="col-md-5">
-
-        <form class="login input-group my-2 my-lg-0" method="post">
-            <div class="input-group-prepend">
-
-                <input type="text" class="form-control mr-sm-2" id="email-input" placeholder="Email" required>
-                <input class="form-control mr-sm-2" type="password" placeholder="Password" id="password-input"
-                    name="psw" required>
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-
-            </div>
-
-        </form>
-    </div>
 </nav>
 
 
@@ -29,12 +13,24 @@
     <h2>Join the Club</h2>
 
     <form class="signup">
-        <input type="email" id="email-input" placeholder="Email Address.." required>
-        <input type="text" id="username-input" placeholder="New Username.." required>
-        <input type="password" id="password-input" placeholder="Password.." required>
-        <input class="joinsubmit" type="submit" value="SIGN UP">
-
-    </form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="email-input" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputUsername1">Username</label>
+                    <input type="text" class="form-control" id="username-input" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="password-input" placeholder="Password">
+                </div>
+                <div style="display: none" id="alert" class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                    <span class="sr-only">Error:</span> <span class="msg"></span>
+                </div>
+                <button type="submit" class="btn btn-default">Sign Up</button>
+            </form>
 
 
 
@@ -84,7 +80,7 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="/assets/js/login.js"></script>
+<script type="text/javascript" src="/assets/js/signup.js"></script>
 
 
 
@@ -97,7 +93,6 @@
         </div>
     </div>
 </nav>
-
 <div class="container">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
