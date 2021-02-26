@@ -2,8 +2,11 @@ module.exports = {
   start: function(io) {
     const formatMessage = require("./formatMessage");
     const botName = "AudioBridge Bot";
+
     io.on("connection", socket => {
       //Socket.emit = Appear to single client connecting
+      const usersName = socket.request.user.username;
+      socket.emit("test", "Do not refresh");
       socket.emit(
         "message",
         formatMessage(botName, "Welcome to AudioBridge chat server!")
@@ -31,7 +34,7 @@ module.exports = {
 
       //Live Chat being sent between users
       socket.on("chatMessage", textmsg => {
-        io.emit("message", formatMessage("User", textmsg));
+        io.emit("message", formatMessage(usersName, textmsg));
       });
     });
   }
