@@ -168,5 +168,5 @@ button:hover, a:hover {
 }
 
 #membersLink:hover {
-  color: none;
+  color: inherit;
 }
