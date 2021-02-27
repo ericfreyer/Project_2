@@ -159,3 +159,14 @@ a {
 button:hover, a:hover {
   opacity: 0.7;
 }
+
+
+#membersLink {
+  color: gray;
+  text-decoration: none;
+
+}
+
+#membersLink:hover {
+  color: none;
+}
