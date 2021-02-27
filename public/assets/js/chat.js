@@ -1,12 +1,10 @@
 const chatForm = document.getElementById("chat-form");
 const chatMessage = document.querySelector(".msg_history");
 const socket = io();
-
 socket.on("message", message => {
   console.log(message);
   outputMessage(message);
   //scrolling to bottom auto
-
   chatMessage.scrollTop = chatMessage.scrollHeight;
 });
 

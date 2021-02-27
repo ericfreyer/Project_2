@@ -6,11 +6,6 @@ module.exports = {
     io.on("connection", socket => {
       //Socket.emit = Appear to single client connecting
       const usersName = socket.request.user.username;
-      socket.emit("test", "Do not refresh");
-      socket.emit(
-        "message",
-        formatMessage(botName, "Welcome to AudioBridge chat server!")
-      );
       socket.emit(
         "message",
         formatMessage(botName, "This chat server is still in Alpha Build")
