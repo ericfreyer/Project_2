@@ -5,7 +5,7 @@ As a person passionate about music, I want to have the ability to join an online
 * [Usage](#usage)
 * [Contributing](#contributing)
 * [Tests](#tests)
-*[Application](#Application)
+* [Application](#Application)
 * [Questions](#questions)
 * [Credits](#credits)
 # Installation
