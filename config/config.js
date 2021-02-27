@@ -2,9 +2,9 @@ require("dotenv").config();
 module.exports = {
   development: {
     username: "root",
-    password: process.env.DB_PASS,
+    password: "",
     database: "audiobridge_db",
-    host: "127.0.0.1",
+    host: "127.0.0.1:3306",
     dialect: "mysql"
   },
   test: {
@@ -13,10 +13,10 @@ module.exports = {
     database: "database_test",
     host: "127.0.0.1",
     dialect: "mysql"
-  },
-  production: {
-    use_env_variable: "JAWSDB_URL",
-    dialect: "mysql"
   }
+  // production: {
+  //   use_env_variable: "JAWSDB_URL",
+  //   dialect: "mysql"
+  // }
 };
 
