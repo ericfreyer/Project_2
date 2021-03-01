@@ -22,38 +22,63 @@
         </form>
     </div>
 </nav>
-<img id="logo" src="/assets/img/audiobridgelogo.png" alt="logo"  width=750/>
+
+<div class="wrap">
+
+    <h2>Sign Up</h2>
+
+    
+
+    <form method="get" action='/' id="login signup">
+        <button type="submit" class="btn btn-default">Here</button>
+    </form>
+
+    
+
+
+
+
+
+
+    <div class="altsignup">
+
+        <ul>
+            <li class='thirdPartyLink'>
+                <a class='fbjsLogin' data-redirect='/' href='#'>
+                    <img class="thirdPartyLink__icon" alt="Sign in with Facebook"
+                        title="Sign in with your Facebook account"
+                        src="https://s.gr-assets.com/assets/gr/share_module/share_facebook_circle-ecf94fc18c887e845025d979d27f758d.svg" />
+                </a>
+            </li>
+            <li class='thirdPartyLink'>
+                <a href="#" onclick="GR_Twitter.askToConnect(); return false;"><img class="thirdPartyLink__icon"
+                        alt="Sign in with Twitter" title="Sign in with your Twitter account"
+                        src="https://s.gr-assets.com/assets/gr/share_module/share_twitter_circle-1e3cc199af6bf2bd798502acf873657a.svg" /></a>
+            </li>
+            <li class='thirdPartyLink'>
+                <a href="/google_accounts/sign_in"><img class="thirdPartyLink__icon" alt="Sign in with Google"
+                        title="Sign in with your Google account"
+                        src="https://s.gr-assets.com/assets/gr/third_party/google_circle-694153be668f0720f058e755b6f136c6.png" /></a>
+            </li>
+            <li class='thirdPartyLink'>
+                <a href="#"
+                    onclick="GR_Amazon.askToConnect(&#39;https://www.goodreads.com/amazon/login/redirect_to_amazon_login_url&#39;); return false;"><img
+                        class="thirdPartyLink__icon" alt="Sign in with Amazon" title="Sign in with your Amazon account"
+                        src="https://s.gr-assets.com/assets/gr/third_party/amazon_circle-5596868f0d928f2945f3374b01f5e10b.png" /></a>
+            </li>
+            <li class='thirdPartyLink'>
+                <a href="#" onclick="GR_Apple.login(); return false;"><img class="thirdPartyLink__icon"
+                        alt="Sign in with Apple" title="Sign in with your Apple account"
+                        src="https://s.gr-assets.com/assets/gr/share_module/share_apple_circle-f5bc082e9664486c404fe34b8e212378.svg" /></a>
+            </li>
+        </ul>
+
+    </div>
+
+
+</div>
+
+
+<img id="logo" src="/assets/img/audiobridgelogo.png" alt="logo" width=750 />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript" src="/assets/js/login.js"></script>
-
-
-
-
-{{!-- //ORIGINAL CODE INCASE WE ARE MISSING ANY IDS OR CLASSES --}}
-
-{{!-- <nav class="navbar navbar-default">
-    <div class="container-fluid">
-        <div class="navbar-header">
-        </div>
-    </div>
-</nav>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <h2>Login Form</h2>
-            <form class="login">
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="email-input" placeholder="Email">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Password</label>
-                    <input type="password" class="form-control" id="password-input" placeholder="Password">
-                </div>
-                <button type="submit" class="btn btn-default">Login</button>
-            </form>
-            <br />
-            <p>Or sign up <a href="/">here</a></p>
-        </div>
-    </div>
-</div> --}}
