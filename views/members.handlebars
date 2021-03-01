@@ -1,5 +1,7 @@
 
 <link rel="stylesheet" href="/assets/css/chat.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 
 <nav class="row navbar navbar-dark bg-dark">
     ​
@@ -31,12 +33,12 @@
 
 <body class="w3-light-grey">
 
-    <div class="w3-content" style="max-width:1400px">
+    <div class="w3-content" style="max-width:1400px;">
 
 
         <header class="w3-container w3-center w3-padding-32">
-            <h1><b>Audio Bridge</b></h1>
-            <p>Welcome to our <span class="w3-tag">audio club</span></p>
+            {{!-- <h1><b>Audio Bridge</b></h1>
+            <p>Welcome to your <span class="w3-tag">audio club</span></p> --}}
             <img src="../assets/img/audiobridgelogo.png" alt="">
         </header>
 
@@ -48,8 +50,8 @@
 
                 <div class="w3-card-4 w3-margin w3-white">
                     <div class="w3-container" id="title">
-                        <h3><b>TITLE HEADING</b></h3>
-                        <h5>Title description, <span class="w3-opacity">April 7, 2014</span></h5>
+                        <h3><b>Post</b></h3>
+                        <h5>Title description, <span class="w3-opacity">March 2, 2020</span></h5>
                     </div>
 
                     <div class="w3-container">
@@ -62,10 +64,37 @@
                             diam non
                             fringilla.</p>
                         <div class="w3-row">
-                            <div class="w3-col m8 s12">
+                            {{!-- <div class="w3-col m8 s12">
                                 <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE
                                             »</b></button></p>
+                            </div> --}}
+                            <div class="w3-col m4 w3-hide-small">
+                                <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span
+                                            class="w3-tag">0</span></span></p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-card-4 w3-margin w3-white">
+                    <div class="w3-container" id="title">
+                        <h3><b>Post</b></h3>
+                        <h5>Title description, <span class="w3-opacity">March 2, 2020</span></h5>
+                    </div>
+
+                    <div class="w3-container">
+                        <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem
+                            euismod
+                            placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed
+                            ultricies mi non
+                            congue ullam corper. Praesent tincidunt sed
+                            tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida
+                            diam non
+                            fringilla.</p>
+                        <div class="w3-row">
+                            {{!-- <div class="w3-col m8 s12">
+                                <p><button class="w3-button w3-padding-large w3-white w3-border"><b>READ MORE
+                                            »</b></button></p>
+                            </div> --}}
                             <div class="w3-col m4 w3-hide-small">
                                 <p><span class="w3-padding-large w3-right"><b>Comments  </b> <span
                                             class="w3-tag">0</span></span></p>
@@ -84,7 +113,7 @@
                             <div class="w3-col m8 s12">
 
 
-                                <a href="/chat" class="w3-button w3-padding-large w3-white w3-border">Lets talk music
+                                <a href="/chat" class="w3-button w3-padding-large w3-white w3-border">Lets talk music</a>
 
 
                              
@@ -122,8 +151,6 @@
                     </div>
                     <ul class="w3-ul w3-hoverable w3-white">
                         <li class="w3-padding-16">
-                            <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right"
-                                style="width:50px">
                             <span class="w3-large">Lorem</span><br>
                             <span>Sed mattis nunc</span>
                         </li>
