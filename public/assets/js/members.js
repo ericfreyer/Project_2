@@ -40,7 +40,7 @@ $(document).ready(() => {
   }
 
   $.get("/api/user_data").then(data => {
-    $("#profileName").text(data.username);
+    $("#profileName").text(data.username + "'s profile");
   });
 
   $.get("/api/posts").then(data => {
