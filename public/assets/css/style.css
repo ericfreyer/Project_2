@@ -161,12 +161,4 @@ button:hover, a:hover {
 }
 
 
-#membersLink {
-  color: gray;
-  text-decoration: none;
 
-}
-
-#membersLink:hover {
-  color: inherit;
-}
