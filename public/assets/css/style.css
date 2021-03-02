@@ -160,5 +160,10 @@ button:hover, a:hover {
   opacity: 0.7;
 }
 
+#membersBody {
+  background-color: black;
+  margin: none;
+}
+
 
 
